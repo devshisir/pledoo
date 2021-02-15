@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Tearms</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         outline: 0;
+         font-family: 'Montserrat', sans-serif;
+         box-sizing: border-box;
+      }
+
+      .img-fluid {
+         max-width: 100%;
+         height: auto;
+      }
+
+      div {
+         box-sizing: border-box;
+      }
+
+      /* registration terms css  */
+      .registration_terms_main_wrapper {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .re_terms_form {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding: 40px 80px;
+      }
+
+      .auth_right_banar {
+         width: 50%;
+         position: relative;
+      }
+
+      .right_banar_info {
+         position: absolute;
+         width: 100%;
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         text-align: center;
+      }
+
+      .right_banar_info h3 {
+         color: #fff;
+         font-size: 35px;
+         line-height: 43px;
+      }
+
+      .right_banar_info p {
+         color: rgba(255, 255, 255, 0.75);
+         margin-top: 15px;
+         line-height: 22px;
+         font-size: 15px;
+         font-weight: 500;
+      }
+
+      /* auth left content style  */
+      .auth_left_top {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .auth_left_top .back_auth a {
+         text-decoration: none;
+         color: #C2C5CD;
+         font-weight: 500;
+         font-size: 14px;
+      }
+
+      .auth_left_top .mobile_text_top_auth {
+         display: none;
+      }
+
+      .auth_left_top .mobile_text_top_auth p {
+         font-weight: 600;
+         font-size: 14px;
+         color: #9799A3;
+      }
+
+      .auth_left_top .back_auth a img {
+         margin-right: 9px;
+      }
+
+      .auth_left_top .close_auth a {
+         text-decoration: none;
+         color: #C2C5CD;
+         font-weight: 500;
+         font-size: 14px;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+      }
+
+      .auth_left_top .close_auth a img {
+         margin-left: 9px;
+      }
+
+      .re_terms_form_content h3 {
+         text-align: center;
+         font-weight: 700;
+         font-size: 19px;
+         color: #4D4C52;
+      }
+
+      .re_terms_form_content>p {
+         text-align: center;
+         margin-top: 40px;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 24px;
+         color: #817F89;
+      }
+
+      .re_terms_form_content .ter_form_box {
+         margin-top: 40px;
+      }
+
+      .re_terms_form_content .ter_form_box ul {
+         margin: 0;
+      }
+
+      .re_terms_form_content .ter_form_box ul li {
+         display: block;
+      }
+
+      .re_terms_form_content .ter_form_box ul li a {
+         display: block;
+         background: #F4F3F7;
+         border-radius: 8px;
+         width: 312px;
+         margin: 0 auto;
+         height: 50px;
+         line-height: 50px;
+         text-decoration: none;
+         padding: 0px 20px;
+         font-weight: 600;
+         font-size: 13px;
+         color: #4D4C52;
+         margin-top: 19px;
+         position: relative;
+         transition: 0.4s;
+         box-sizing: border-box;
+      }
+
+      .re_terms_form_content .ter_form_box ul li a span {
+         position: absolute;
+         right: 25px;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      .re_terms_form_content .ter_form_box ul li a:hover {
+         background: #1B51F5;
+         color: #fff;
+      }
+
+      .re_terms_form_content .ter_form_box ul li a:hover svg:first-child rect {
+         stroke: #fff;
+      }
+
+      .re_terms_form_content .ter_form_box ul li a:hover svg rect:last-child {
+         fill: #fff;
+      }
+
+      .re_terms_form_content .ter_form_box .accept_register_btn {
+         display: block;
+         background: #1B51F5;
+         border-radius: 8px;
+         width: 312px;
+         margin: 0 auto;
+         height: 50px;
+         line-height: 50px;
+         text-decoration: none;
+         padding: 0px 20px;
+         font-weight: 600;
+         font-size: 14px;
+         color: #fff;
+         margin-top: 19px;
+         position: relative;
+         transition: 0.4s;
+         border: none;
+         cursor: pointer;
+      }
+
+      .re_terms_form_content .ter_form_box .accept_register_btn:hover {
+         background: #0026F8;
+      }
+
+      .re_terms_form_content .ter_form_box p {
+         text-align: center;
+         margin-top: 40px;
+         font-weight: 500;
+         font-size: 12px;
+         color: #C4C2CD;
+         line-height: 19px;
+      }
+
+      .re_terms_form_content .ter_form_box p a {
+         color: #C4C2CD;
+      }
+
+      .re_terms_form_content .ter_form_box p a:hover {
+         color: #0026F8;
+      }
+
+      .re_terms_form .auth_left_bottom {
+         border-top: 1px solid #dbdce4af;
+         padding-top: 20px;
+         box-sizing: border-box;
+      }
+
+      .re_terms_form .auth_left_bottom p {
+         text-align: center;
+         font-weight: 500;
+         font-size: 14px;
+         color: #9799A3;
+      }
+
+      .re_terms_form .auth_left_bottom p a {
+         color: #1B51F5;
+         font-weight: 600;
+         margin-left: 5px;
+         text-decoration: none;
+      }
+
+      /* page responsive start  */
+      @media (min-width: 992px) and (max-width: 1199px) {
+         .re_terms_form {
+            padding: 27px 55px;
+         }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+         .re_terms_form {
+            padding: 10px 55px;
+         }
+
+         .re_terms_form_content .ter_form_box ul li a {
+            width: 100%;
+         }
+
+         .re_terms_form_content .ter_form_box .accept_register_btn {
+            width: 100%;
+         }
+
+         .re_terms_form_content h3 {
+            font-size: 16px;
+         }
+
+         .re_terms_form_content>p {
+            margin-top: 16px;
+            font-size: 12px;
+            line-height: 24px;
+         }
+
+         .re_terms_form_content .ter_form_box {
+            margin-top: 15px;
+         }
+
+         .re_terms_form_content .ter_form_box p {
+            margin-top: 22px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 19px;
+         }
+
+         .right_banar_info h3 {
+            font-size: 26px;
+            line-height: 35px;
+         }
+
+         .auth_right_banar img {
+            height: 100vh;
+         }
+
+         .re_terms_form .auth_left_bottom {
+            padding-top: 12px;
+         }
+
+         .re_terms_form .auth_left_bottom p {
+            font-size: 13px;
+         }
+      }
+
+      @media (min-width: 576px) and (max-width: 767px) {
+         .auth_right_banar {
+            display: none;
+         }
+
+         .re_terms_form {
+            width: 100%;
+            padding: 20px 100px;
+         }
+      }
+
+      @media (max-width: 575px) {
+         .auth_right_banar {
+            display: none;
+         }
+
+         .re_terms_form {
+            width: 100%;
+            padding: 0px;
+         }
+
+         .auth_left_top {
+            background: #F1F2F5;
+            padding: 13px 20px;
+         }
+
+         .auth_left_top .back_auth a span {
+            display: none;
+         }
+
+         .auth_left_top .close_auth a span {
+            display: none;
+         }
+
+         .auth_left_top .mobile_text_top_auth {
+            display: block;
+         }
+
+         .auth_left_form {
+            padding: 50px 26px;
+         }
+
+         .re_terms_form_content .ter_form_box ul li a {
+            width: 100%;
+         }
+
+         .re_terms_form_content .ter_form_box .accept_register_btn {
+            width: 100%;
+         }
+
+         .re_terms_form .auth_left_bottom {
+            border-top: none;
+            padding-top: 0px;
+            padding: 20px 30px;
+            position: relative;
+         }
+
+         .re_terms_form .auth_left_bottom::after {
+            height: 1px;
+            width: 80%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            content: "";
+            background: #DBDCE4;
+            position: absolute;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="registration_terms_main_wrapper">
+      <div class="re_terms_form">
+         <div class="auth_left_top">
+            <div class="back_auth">
+               <a href="#"><img src="./img/icons/left-arrow.png" alt=""> <span>Back</span></a>
+            </div>
+            <div class="mobile_text_top_auth">
+               <p>Registration</p>
+            </div>
+            <div class="close_auth">
+               <a href="#"> <span>Close</span> <img src="./img/icons/close.png" alt=""></a>
+            </div>
+         </div>
+         <div class="auth_left_form">
+            <div class="re_terms_form_content">
+               <h3>You Are Almost There. </h3>
+               <p>You confirm that you are at least 18 years <br> old and that you accept the site terms.</p>
+               <div class="ter_form_box">
+                  <ul>
+                     <li><a href="#">Terms & Conditions <span>
+                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <mask id="path-1-inside-1" fill="white">
+                                    <rect y="4" width="8" height="8" rx="1" />
+                                 </mask>
+                                 <rect y="4" width="8" height="8" rx="1" stroke="#C2C5CD" stroke-width="4"
+                                    mask="url(#path-1-inside-1)" />
+                                 <rect x="4" width="8" height="8" rx="1" fill="#C2C5CD" />
+                              </svg>
+                           </span></a></li>
+                     <li><a href="#">Terms & Conditions <span>
+                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <mask id="path-1-inside-1" fill="white">
+                                    <rect y="4" width="8" height="8" rx="1" />
+                                 </mask>
+                                 <rect y="4" width="8" height="8" rx="1" stroke="#C2C5CD" stroke-width="4"
+                                    mask="url(#path-1-inside-1)" />
+                                 <rect x="4" width="8" height="8" rx="1" fill="#C2C5CD" />
+                              </svg>
+                           </span></a></li>
+                  </ul>
+                  <button class="accept_register_btn" type="buton">Accept and register</button>
+                  <p> This site is protected by reCAPTCHA and the <br> Google <a href="#">Privacy Policy</a> and <a
+                        href="#">Terms of Service</a> apply.</p>
+               </div>
+            </div>
+         </div>
+         <div class="auth_left_bottom">
+            <p>Have an Account? <a href="#">Log in</a></p>
+         </div>
+      </div>
+      <div class="auth_right_banar">
+         <img class="img-fluid" src="./img/banner.png" alt="">
+         <div class="right_banar_info">
+            <h3>Loads of sweet <br> casino games</h3>
+            <p>Discover the variety of games and <br> rewards on Pledoo</p>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
