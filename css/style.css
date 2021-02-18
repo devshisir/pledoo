@@ -16,12 +16,12 @@ div {
 }
 
 /* registration terms css  */
-.registration_terms_main_wrapper {
+.auth_main_wrapper {
    display: flex;
    justify-content: space-between;
 }
 
-.re_terms_form {
+.auth_form {
    width: 50%;
    display: flex;
    flex-direction: column;
@@ -229,13 +229,13 @@ div {
 
 /* page responsive start  */
 @media (min-width: 992px) and (max-width: 1199px) {
-   .re_terms_form {
+   .auth_form {
       padding: 27px 55px;
    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-   .re_terms_form {
+   .auth_form {
       padding: 10px 55px;
    }
 
@@ -291,7 +291,7 @@ div {
       display: none;
    }
 
-   .re_terms_form {
+   .auth_form {
       width: 100%;
       padding: 20px 100px;
    }
@@ -302,7 +302,7 @@ div {
       display: none;
    }
 
-   .re_terms_form {
+   .auth_form {
       width: 100%;
       padding: 0px;
    }
