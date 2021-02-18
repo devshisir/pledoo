@@ -10,13 +10,17 @@
    max-width: 100%;
    height: auto;
 }
-html,body{
+
+html,
+body {
    box-sizing: border-box;
 }
+
 div {
    box-sizing: border-box;
 }
-.text-center{
+
+.text-center {
    text-align: center;
 }
 
@@ -69,6 +73,10 @@ div {
    align-items: center;
 }
 
+.auth_header2 {
+   justify-content: flex-end !important;
+}
+
 .auth_header .back_auth a {
    text-decoration: none;
    color: #C2C5CD;
@@ -104,114 +112,6 @@ div {
    margin-left: 9px;
 }
 
-.re_terms_form_content h3 {
-   text-align: center;
-   font-weight: 700;
-   font-size: 19px;
-   color: #4D4C52;
-}
-
-.re_terms_form_content>p {
-   text-align: center;
-   margin-top: 40px;
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 24px;
-   color: #817F89;
-}
-
-.re_terms_form_content .ter_form_box {
-   margin-top: 40px;
-}
-
-.re_terms_form_content .ter_form_box ul {
-   margin: 0;
-}
-
-.re_terms_form_content .ter_form_box ul li {
-   display: block;
-}
-
-.re_terms_form_content .ter_form_box ul li a {
-   display: block;
-   background: #F4F3F7;
-   border-radius: 8px;
-   width: 312px;
-   margin: 0 auto;
-   height: 50px;
-   line-height: 50px;
-   text-decoration: none;
-   padding: 0px 20px;
-   font-weight: 600;
-   font-size: 13px;
-   color: #4D4C52;
-   margin-top: 19px;
-   position: relative;
-   transition: 0.4s;
-   box-sizing: border-box;
-}
-
-.re_terms_form_content .ter_form_box ul li a span {
-   position: absolute;
-   right: 25px;
-   top: 50%;
-   transform: translateY(-50%);
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover {
-   background: #1B51F5;
-   color: #fff;
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover svg:first-child rect {
-   stroke: #fff;
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover svg rect:last-child {
-   fill: #fff;
-}
-
-.re_terms_form_content .ter_form_box .accept_register_btn {
-   display: block;
-   background: #1B51F5;
-   border-radius: 8px;
-   width: 312px;
-   margin: 0 auto;
-   height: 50px;
-   line-height: 50px;
-   text-decoration: none;
-   padding: 0px 20px;
-   font-weight: 600;
-   font-size: 14px;
-   color: #fff;
-   margin-top: 19px;
-   position: relative;
-   transition: 0.4s;
-   border: none;
-   cursor: pointer;
-}
-
-.re_terms_form_content .ter_form_box .accept_register_btn:hover {
-   background: #0026F8;
-}
-
-.re_terms_form_content .ter_form_box p {
-   text-align: center;
-   margin-top: 40px;
-   font-weight: 500;
-   font-size: 12px;
-   color: #C4C2CD;
-   line-height: 19px;
-}
-
-.re_terms_form_content .ter_form_box p a {
-   color: #C4C2CD;
-}
-
-.re_terms_form_content .ter_form_box p a:hover {
-   color: #0026F8;
-}
-
 .auth_footer {
    border-top: 1px solid #dbdce4af;
    padding-top: 20px;
@@ -233,50 +133,136 @@ div {
 }
 
 
-/* forgote pass email form content css  */
-.for_pass_email_content{}
-.for_pass_email_content .top_info{}
-.for_pass_email_content .top_info h3{
+/* auth user details registration form content css  */
+
+.auth_user_details {}
+
+.auth_user_details .top_title {}
+
+.auth_user_details .top_title h3 {
    font-weight: 700;
    font-size: 19px;
    color: #4D4C52;
 }
-.for_pass_email_content .top_info p{
-   margin-top: 30px;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 24px;
-   color: #817F89;
+
+.auth_user_details .user_details_form {
+   margin-top: 50px;
 }
 
-.for_pass_email_content .f_pass_form_form{
-   margin: 40px 0px;
-}
-.for_pass_email_content .f_pass_form_form .input_box{
+.auth_user_details .user_details_form .input_box {
    width: 312px;
    position: relative;
    margin: 0 auto;
+   margin-top: 25px;
 }
 
-.for_pass_email_content .f_pass_form_form .input_box input{
+.auth_user_details .user_details_form .input_box input {
    width: 100%;
    height: 50px;
    border-radius: 8px;
    background: #fff;
    padding: 0px 24px;
-   box-shadow: inset 0px 1px 4px rgba(0,0,0,0.1);
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%);
    border: 2px solid #ddd;
+   font-weight: 600;
+   font-size: 13px;
+   color: #4D4C52;
+   transition: 0.4s;
+}
+
+.auth_user_details .user_details_form .input_box select.select_1 {
+   width: 100%;
+   height: 50px;
+   border-radius: 8px;
+   background: #fff;
+   padding: 0px 24px;
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%);
+   border: 2px solid #ddd;
+   font-weight: 600;
+   font-size: 13px;
+   color: #4D4C52;
+   transition: 0.4s;
+   -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: url('../img/icons/down-arrow.png') no-repeat right;
+    background-position: 93% center;
+}
+
+.auth_user_details .user_details_form .input_box select option{
    font-weight: 600;
    font-size: 13px;
    color: #4D4C52;
 }
 
-.for_pass_email_content .f_pass_form_form .input_box input:focus::placeholder {
+.auth_user_details .user_details_form .input_box .select_prefix{
+   display: flex;
+   justify-content: space-between;
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix .select_prefix_div{
+   position: relative;
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix .select_prefix_div select.select_2{
+   width: 100%;
+   height: 50px;
+   border-radius: 8px;
+   background: #fff;
+   padding: 0px 24px;
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%);
+   border: 2px solid #ddd;
+   font-weight: 600;
+   font-size: 13px;
+   color: #4D4C52;
+   transition: 0.4s;
+   -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: url('../img/icons/down-arrow.png') no-repeat right;
+    background-position: 87% center;
+    padding-left: 43px;
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix .select_prefix_div select.select_2 option{
+   font-weight: 600;
+   font-size: 13px;
+   color: #4D4C52;
+   text-align: left;
+   padding: 10px 0px;
+   height: 20px;
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix div{
+   width: 47%;
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix .select_prefix_div .country_flag{
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   transform: translateY(-50%);
+}
+
+.auth_user_details .user_details_form .input_box input:focus{
+   border-color: #1B51F5;
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%), 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.auth_user_details .user_details_form .input_box select:focus{
+   border-color: #1B51F5;
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%), 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.auth_user_details .user_details_form .input_box .select_prefix .select_prefix_div select.select_2:focus{
+   border-color: #1B51F5;
+   box-shadow: inset 0px 1px 4px rgb(0 0 0 / 10%), 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.auth_user_details .user_details_form .input_box input:focus::placeholder{
    color: transparent;
- }
+}
 
-
-.for_pass_email_content .f_pass_form_form .input_box .input_label_flot{
+.auth_user_details .user_details_form .input_box .input_flot_label {
    position: absolute;
    top: -10px;
    left: 17px;
@@ -287,14 +273,22 @@ div {
    color: #C2C5CD;
 }
 
-.for_pass_email_content .f_pass_form_form .form_submit{
+.auth_user_details .user_details_form .input_box .password_revel{
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+   display: inline-flex;
+   cursor: pointer;
+}
+
+.auth_user_details .user_details_form .form_submit{
    width: 312px;
    position: relative;
    margin: 0 auto;
    margin-top: 20px;
 }
-
-.for_pass_email_content .f_pass_form_form .form_submit button{
+.auth_user_details .user_details_form .form_submit button{
    width: 100%;
    background: #1B51F5;
    border: none;
@@ -308,37 +302,9 @@ div {
    outline: none;
 }
 
-.for_pass_email_content .f_pass_form_form .form_submit button:hover{
-   background-color: #0026F8;
+.auth_user_details .user_details_form .form_submit button:hover{
+   background: #0026F8;
 }
-
-.for_pass_email_content .f_pass_terms_form{}
-.for_pass_email_content .f_pass_terms_form p{
-   font-size: 12px;
-   color: #C2C5CD;
-   line-height: 20px;
-}
-.for_pass_email_content .f_pass_terms_form p a{
-   color: #C2C5CD;
-}
-
-.for_pass_email_content .f_pass_terms_form p a:hover{
-   color: #0026F8;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,7 +318,7 @@ div {
 
 @media (min-width: 768px) and (max-width: 991px) {
    .auth_form {
-      padding: 17px 37px;
+      padding: 17px 18px;
    }
 
    .right_banar_info h3 {
@@ -371,19 +337,35 @@ div {
    .auth_footer p {
       font-size: 13px;
    }
+
+   .auth_user_details {
+      padding: 50px 0px;
+  }
+  .user_details_auth_form{
+     max-height: 100vh;
+     overflow-y: scroll;
+  }
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
    .auth_right_banar {
       display: none;
    }
-   .for_pass_email_content {
-      padding: 60px 0px;
-   }
+
    .auth_form {
       width: 100%;
       padding: 20px 70px;
    }
+
+   .auth_user_login {
+      padding: 60px 0px;
+   }
+   .auth_user_details {
+      padding: 50px 0px;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -436,14 +418,21 @@ div {
       position: absolute;
    }
 
-   .for_pass_email_content .f_pass_form_form .input_box {
-      width: 100%;
+   .auth_header2 {
+      justify-content: space-between !important;
    }
 
-   .for_pass_email_content .f_pass_form_form .form_submit{
-      width: 100%;
+   .auth_header.auth_header2 .mobile_text_top_auth {
+      display: block;
+      flex: 1;
+      text-align: center;
    }
 
+   .auth_user_details .user_details_form .input_box {
+      width: 97%;
+  }
+  .auth_user_details .user_details_form .form_submit{
+     width: 97%;
+  }
 
-   
 }
