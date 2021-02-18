@@ -104,114 +104,6 @@ div {
    margin-left: 9px;
 }
 
-.re_terms_form_content h3 {
-   text-align: center;
-   font-weight: 700;
-   font-size: 19px;
-   color: #4D4C52;
-}
-
-.re_terms_form_content>p {
-   text-align: center;
-   margin-top: 40px;
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 24px;
-   color: #817F89;
-}
-
-.re_terms_form_content .ter_form_box {
-   margin-top: 40px;
-}
-
-.re_terms_form_content .ter_form_box ul {
-   margin: 0;
-}
-
-.re_terms_form_content .ter_form_box ul li {
-   display: block;
-}
-
-.re_terms_form_content .ter_form_box ul li a {
-   display: block;
-   background: #F4F3F7;
-   border-radius: 8px;
-   width: 312px;
-   margin: 0 auto;
-   height: 50px;
-   line-height: 50px;
-   text-decoration: none;
-   padding: 0px 20px;
-   font-weight: 600;
-   font-size: 13px;
-   color: #4D4C52;
-   margin-top: 19px;
-   position: relative;
-   transition: 0.4s;
-   box-sizing: border-box;
-}
-
-.re_terms_form_content .ter_form_box ul li a span {
-   position: absolute;
-   right: 25px;
-   top: 50%;
-   transform: translateY(-50%);
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover {
-   background: #1B51F5;
-   color: #fff;
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover svg:first-child rect {
-   stroke: #fff;
-}
-
-.re_terms_form_content .ter_form_box ul li a:hover svg rect:last-child {
-   fill: #fff;
-}
-
-.re_terms_form_content .ter_form_box .accept_register_btn {
-   display: block;
-   background: #1B51F5;
-   border-radius: 8px;
-   width: 312px;
-   margin: 0 auto;
-   height: 50px;
-   line-height: 50px;
-   text-decoration: none;
-   padding: 0px 20px;
-   font-weight: 600;
-   font-size: 14px;
-   color: #fff;
-   margin-top: 19px;
-   position: relative;
-   transition: 0.4s;
-   border: none;
-   cursor: pointer;
-}
-
-.re_terms_form_content .ter_form_box .accept_register_btn:hover {
-   background: #0026F8;
-}
-
-.re_terms_form_content .ter_form_box p {
-   text-align: center;
-   margin-top: 40px;
-   font-weight: 500;
-   font-size: 12px;
-   color: #C4C2CD;
-   line-height: 19px;
-}
-
-.re_terms_form_content .ter_form_box p a {
-   color: #C4C2CD;
-}
-
-.re_terms_form_content .ter_form_box p a:hover {
-   color: #0026F8;
-}
-
 .auth_footer {
    border-top: 1px solid #dbdce4af;
    padding-top: 20px;
@@ -233,114 +125,121 @@ div {
 }
 
 
-/* forgote pass email form content css  */
-.for_pass_email_content{}
-.for_pass_email_content .top_info{}
-.for_pass_email_content .top_info h3{
+/* forgote pass email send form content css  */
+
+.f_pass_email_send_content{}
+.f_pass_email_send_content .top_info{}
+.f_pass_email_send_content .top_info h3{
    font-weight: 700;
    font-size: 19px;
    color: #4D4C52;
 }
-.for_pass_email_content .top_info p{
+.f_pass_email_send_content .top_info p{
    margin-top: 30px;
-   font-weight: 500;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 22px;
    color: #817F89;
+   font-weight: 500;
 }
 
-.for_pass_email_content .f_pass_form_form{
-   margin: 40px 0px;
-}
-.for_pass_email_content .f_pass_form_form .input_box{
-   width: 312px;
-   position: relative;
-   margin: 0 auto;
-}
-
-.for_pass_email_content .f_pass_form_form .input_box input{
-   width: 100%;
-   height: 50px;
-   border-radius: 8px;
-   background: #fff;
-   padding: 0px 24px;
-   box-shadow: inset 0px 1px 4px rgba(0,0,0,0.1);
-   border: 2px solid #ddd;
+.f_pass_email_send_content .top_info p span{
    font-weight: 600;
-   font-size: 13px;
    color: #4D4C52;
 }
 
-.for_pass_email_content .f_pass_form_form .input_box input:focus::placeholder {
-   color: transparent;
- }
-
-
-.for_pass_email_content .f_pass_form_form .input_box .input_label_flot{
-   position: absolute;
-   top: -10px;
-   left: 17px;
-   background: #fff;
-   font-weight: 500;
-   font-size: 12px;
-   padding: 4px 10px;
-   color: #C2C5CD;
+.f_pass_email_send_content .social_login_item {
+   margin: 40px 0px;
+   text-align: center;
 }
-
-.for_pass_email_content .f_pass_form_form .form_submit{
+.f_pass_email_send_content .social_login_item ul {
+   margin: 0;
+   padding: 0;
+}
+.f_pass_email_send_content .social_login_item ul li {
+   display: block;
+   margin-bottom: 15px;
+}
+.f_pass_email_send_content .social_login_item ul li a{
    width: 312px;
-   position: relative;
-   margin: 0 auto;
-   margin-top: 20px;
-}
-
-.for_pass_email_content .f_pass_form_form .form_submit button{
-   width: 100%;
-   background: #1B51F5;
-   border: none;
    height: 48px;
+   background: #F4F3F6;
+   display: block;
+   margin: 0 auto;
    line-height: 48px;
    font-weight: 600;
    font-size: 14px;
-   color: #fff;
+   text-decoration: none;
    border-radius: 8px;
-   cursor: pointer;
-   outline: none;
+   color: #4D4C52;
+   position: relative;
 }
 
-.for_pass_email_content .f_pass_form_form .form_submit button:hover{
-   background-color: #0026F8;
+.f_pass_email_send_content .social_login_item ul li a .icon{
+   position: absolute;
+   top: 50%;
+   left: 20px;
+   transform: translateY(-50%);
+   display: inline-flex;
 }
 
-.for_pass_email_content .f_pass_terms_form{}
-.for_pass_email_content .f_pass_terms_form p{
+.f_pass_email_send_content .social_login_item ul li a:hover{
+   background: #EAF2FF;
+}
+
+.f_pass_email_send_content .chnage_email{
+   border-bottom: 1px solid #dbdce49c;
+   width: 312px;
+   margin: 0 auto;
+   padding-bottom: 25px;
+}
+.f_pass_email_send_content .chnage_email a{
+   font-weight: 600;
+   font-size: 14px;
+   text-decoration: none;
+}
+
+.f_pass_email_send_content .chnage_email a:hover{
+   text-decoration: underline;
+}
+
+.f_pass_email_send_content .resend_pass_link{
+   margin-top: 30px;
+}
+
+.f_pass_email_send_content .resend_pass_link a{
+   display: block;
+   width: 312px;
+   margin: 0 auto;
+   height: 48px;
+   line-height: 48px;
+   background: #EAF2FF;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 14px;
+   color: #1B51F5;
+   border-radius: 8px;
+}
+
+.f_pass_email_send_content .resend_pass_link a:hover{
+   background: #1B51F5;
+   color: #fff;
+}
+
+.f_pass_email_send_content .f_pass_email_send_terms_condition{
+   margin-top: 40px;
+}
+.f_pass_email_send_content .f_pass_email_send_terms_condition p{
    font-size: 12px;
    color: #C2C5CD;
-   line-height: 20px;
+   line-height: 22px;
 }
-.for_pass_email_content .f_pass_terms_form p a{
+.f_pass_email_send_content .f_pass_email_send_terms_condition p a{
    color: #C2C5CD;
 }
 
-.for_pass_email_content .f_pass_terms_form p a:hover{
-   color: #0026F8;
+.f_pass_email_send_content .f_pass_email_send_terms_condition p a:hover{
+   color: #1B51F5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* page responsive start  */
@@ -348,11 +247,14 @@ div {
    .auth_form {
       padding: 27px 55px;
    }
+   .f_pass_email_send_content {
+      padding: 46px 0px;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
    .auth_form {
-      padding: 17px 37px;
+      padding: 17px 18px;
    }
 
    .right_banar_info h3 {
@@ -371,19 +273,29 @@ div {
    .auth_footer p {
       font-size: 13px;
    }
+
+   .f_pass_email_send_content .top_info p {
+      margin-top: 16px;
+   }
+
+   .f_pass_email_send_content .social_login_item {
+      margin: 20px 0px;
+   }
+   
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
    .auth_right_banar {
       display: none;
    }
-   .for_pass_email_content {
-      padding: 60px 0px;
-   }
    .auth_form {
       width: 100%;
       padding: 20px 70px;
    }
+   .f_pass_email_send_content {
+      padding: 56px 0px;
+   }
+   
 }
 
 @media (max-width: 575px) {
@@ -436,14 +348,14 @@ div {
       position: absolute;
    }
 
-   .for_pass_email_content .f_pass_form_form .input_box {
-      width: 100%;
+   .f_pass_email_send_content .social_login_item ul li a{
+      width: 95%;
    }
-
-   .for_pass_email_content .f_pass_form_form .form_submit{
-      width: 100%;
+   .f_pass_email_send_content .resend_pass_link a{
+      width: 95%;
    }
-
-
+   .f_pass_email_send_content .chnage_email{
+      width: 95%;
+   }
    
 }
